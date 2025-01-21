@@ -1,4 +1,4 @@
-{
+ {"homepage": "https://Sangeethakavss.github.io/cart",
   "name": "myapp",
   "private": true,
   "version": "0.0.0",
@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "axios": "^1.7.9",
+    "myapp": "file:",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^7.1.1",
